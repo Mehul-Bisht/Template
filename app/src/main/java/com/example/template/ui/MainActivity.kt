@@ -70,7 +70,8 @@ class MainActivity : AppCompatActivity() {
 
     }
 
-    private fun setupBottomNavigationBar() {
+    private fun setupBottomNavigationBar()
+    {
         val navGraphIds = listOf(
             R.navigation.home_graph,
             R.navigation.firebase_graph
@@ -93,7 +94,6 @@ class MainActivity : AppCompatActivity() {
         super.onRestoreInstanceState(savedInstanceState)
         if (entranceViewModel.isUserInitialised.value?.peekContent() == true) {
             setupBottomNavigationBar()
-            //Try running app ok
         }
     }
 
