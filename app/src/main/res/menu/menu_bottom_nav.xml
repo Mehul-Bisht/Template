@@ -2,13 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/entranceFragment"
+        android:title="Entrance"
+        android:icon="@drawable/ic_home"
+        android:iconTint="@color/black" />
+
+    <item
+        android:id="@+id/homeFragment"
         android:title="Api"
         android:icon="@drawable/ic_api"
         android:iconTint="@color/black" />
 
     <item
-        android:id="@+id/firebase"
+        android:id="@+id/firebaseFragment"
         android:title="Firebase"
         android:icon="@drawable/ic_firebase"
         android:iconTint="@color/black"/>

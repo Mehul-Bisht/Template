@@ -18,7 +18,7 @@ class EntranceFragment : Fragment() {
     private var _binding: FragmentEntranceBinding? = null
     private val binding get() = _binding!!
 
-    private lateinit var entranceViewModel: EntranceViewModel
+    private val entranceViewModel: EntranceViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -33,11 +33,6 @@ class EntranceFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         Log.d(" onViewCreated ","EntranceFragment")
-
-        activity?.let {
-            // We must have to use activity context to share common VM between this frag and activity
-            entranceViewModel = ViewModelProvider(it).get(EntranceViewModel::class.java)
-        }
 
         entranceViewModel.checkUserAuth()
 

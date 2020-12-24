@@ -50,5 +50,15 @@
         android:name="com.example.template.ui.fragments.EntranceFragment"
         android:label="fragment_entrance"
         tools:layout="@layout/fragment_entrance" />
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.template.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/firebaseFragment"
+        android:name="com.example.template.ui.fragments.FirebaseFragment"
+        android:label="fragment_firebase"
+        tools:layout="@layout/fragment_firebase" />
 
 </navigation>
