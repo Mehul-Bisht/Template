@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/entranceFragment">
+
+    <fragment
+        android:id="@+id/signInFragment2"
+        android:name="com.example.template.ui.fragments.SignInFragment"
+        android:label="fragment_signin"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_signInFragment2_to_forgotPassFragment"
+            app:destination="@id/forgotPassFragment" />
+        <action
+            android:id="@+id/action_signInFragment2_to_signUpFragment2"
+            app:destination="@id/signUpFragment2"
+            app:popUpTo="@id/signUpFragment2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signInFragment2_to_entranceFragment"
+            app:destination="@id/entranceFragment"
+            app:popUpTo="@id/entranceFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment2"
+        android:name="com.example.template.ui.fragments.SignUpFragment"
+        android:label="fragment_signup"
+        tools:layout="@layout/fragment_signup" >
+        <action
+            android:id="@+id/action_signUpFragment2_to_signInFragment2"
+            app:destination="@id/signInFragment2"
+            app:popUpTo="@id/signInFragment2"
+            app:popUpToInclusive="true" />
+        <action
+            android:id="@+id/action_signUpFragment2_to_entranceFragment"
+            app:destination="@id/entranceFragment"
+            app:popUpTo="@id/entranceFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgotPassFragment"
+        android:name="com.example.template.ui.fragments.ForgotPassFragment"
+        android:label="fragment_forgot_pass"
+        tools:layout="@layout/fragment_forgot_pass" />
+    <fragment
+        android:id="@+id/entranceFragment"
+        android:name="com.example.template.ui.fragments.EntranceFragment"
+        android:label="fragment_entrance"
+        tools:layout="@layout/fragment_entrance" />
+
+</navigation>

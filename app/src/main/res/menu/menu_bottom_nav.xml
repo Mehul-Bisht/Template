@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:title="Api"
+        android:icon="@drawable/ic_api"
+        android:iconTint="@color/black" />
+
+    <item
+        android:id="@+id/firebase"
+        android:title="Firebase"
+        android:icon="@drawable/ic_firebase"
+        android:iconTint="@color/black"/>
+
+</menu>
